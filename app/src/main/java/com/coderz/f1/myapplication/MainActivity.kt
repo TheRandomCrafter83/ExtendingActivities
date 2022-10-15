@@ -1,13 +1,12 @@
 package com.coderz.f1.myapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.coderz.f1.myapplication.base_activity.BaseActivity
 import com.coderz.f1.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity() {
-    lateinit var binding:ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +20,7 @@ class MainActivity : BaseActivity() {
             }
             button2.apply {
                 setOnClickListener {
-                    val intent:Intent = Intent(this@MainActivity,MainActivity2::class.java)
+                    val intent = Intent(this@MainActivity, MainActivity2::class.java)
                     startActivity(intent)
                 }
             }
